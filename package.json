@@ -1,0 +1,26 @@
+{
+  "name": "techBlog",
+  "version": "1.0.0",
+  "description": "A developer who writes about tech wants a CMS-style blog site to publish articles, blog posts, thoughts and opinions.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucianne302/techBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucianne302/techBlog/issues"
+  },
+  "homepage": "https://github.com/Lucianne302/techBlog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
