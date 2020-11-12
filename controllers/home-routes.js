@@ -4,31 +4,12 @@ const { Post, User, Comment } = require('../models');
 
 // get all posts for homepage
 router.get('/', (req, res) => {
-  console.log('======================');
+  console.log('home-routes');
   Post.findAll({
-    attributes: [
-      'id',
-      'title',
-      'post_url',
-      'comment',
-      'created_at'
-    ],
-    include: [
-      {
-        model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-        include: {
-          model: User,
-          attributes: ['username']
-        }
-      },
-      {
-        model: User,
-        attributes: ['username']
-      }
-    ]
+    include: [User]
   })
     .then(dbPostData => {
+      console.log(dbPostData);
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
       res.render('homepage', {
