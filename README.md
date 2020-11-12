@@ -72,5 +72,7 @@ tested applications adding console logs. Used Insomnia to test posts and get env
 GitHub Username: Lucianne302 
 GitHub Profile Link: https://github.com/Lucianne302/techBlog.git
 
+Heroku, https://dry-gorge-61247.herokuapp.com/  
+
 ## Video
 
