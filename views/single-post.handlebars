@@ -1,14 +1,18 @@
+<a href="/dashboard"> &larr; Back to dashboard</a>
+<br>
+<br>
 {{> post-info post}}
 
 {{#if loggedIn}}
+
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+    <button type="submit">Add Comment</button>
+    <!-- button type="button" class="update-btn">update-btn</button -->
   </div>
 </form>
 {{/if}}

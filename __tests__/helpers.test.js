@@ -1,3 +1,4 @@
+// const {format_date, format_plural} = require('../utils/helpers');
 const {format_date, format_plural, format_url} = require('../utils/helpers');
 
 test('format_url() returns a simplified url string', () => {
