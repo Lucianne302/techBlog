@@ -5,10 +5,26 @@
 
 <h3> Posts & Comments</h3>
 <p>Feel free to add articles, blog posts, and opinions.</p>
+
 <ol class="post-list" > 
   {{#each posts as |post|}} 
   <li>
+    TESTHOMEPAGE - {{post.created_at}} - {{created_at}}
     {{> post-info post }}
   </li>
   {{/each}}
 </ol>
+
+<!---
+{{#if posts.length}}
+<section>
+  <ol class="post-list">
+    {{#each posts as |post|}}
+    <li> *** TESTING*** x{{post.created_at}}x
+      {{> post-info post}}
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+--->
