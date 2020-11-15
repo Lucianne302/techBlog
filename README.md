@@ -38,9 +38,10 @@ WHEN I am idle on the page for more than a set time
 THEN I am automatically signed out of the site 
 
 ## Installation
+npm
 
 ## Credits
-Collaborator: Tutor, Stuart Fraser
+Collaborator: Tutor, TA, and Stuart Fraser
 
 ## Resources/links:
 Module 13: Object Relational Mapping (ORM)
