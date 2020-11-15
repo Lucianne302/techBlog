@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
+const { route } = require('./api');
 
 // get all posts for homepage
 router.get('/', (req, res) => {
@@ -76,13 +77,27 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  module.exports.home = (req, res) => {
-    if(!req.session.user){
-      res.render('login');
-    }
-  }
+  // module.exports.home = (req, res) => {
+  //   if(!req.session.user){
+  //     res.render('login');
+  //   }
+  // }
 
   res.render('login');
 });
+
+// // Access the session as req.session
+// router.get('/', function(req, res, next) {
+//   if (req.session.views) {
+//     req.session.views++
+//     res.setHeader('Content-Type', 'text/html')
+//     res.write('<p>views: ' + req.session.views + '</p>')
+//     res.write('<p>expires in: ' + (req.session.cookie.maxAge / 1000) + 's</p>')
+//     res.end()
+//   } else {
+//     req.session.views = 1
+//     res.end('welcome to the session demo. refresh!')
+//   }
+// })
 
 module.exports = router;

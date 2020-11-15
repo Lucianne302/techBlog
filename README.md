@@ -58,6 +58,7 @@ npm inquirer package, https://www.npmjs.com/package/inquirer
 mySQL2, https://www.npmjs.com/package/mysql2 
 NPM express-handlebars, https://www.npmjs.com/package/express-handlebars 
 Node.js mySQL Where, https://www.w3schools.com/nodejs/nodejs_mysql_where.asp
+timeout, https://stackoverflow.com/questions/57120577/how-to-set-query-timeout-in-sequelize & https://stackoverflow.com/questions/50094169/redirect-to-login-page-after-session-timeout-using-nodejs-expressjs-and-reactjs 
 
 Heroku, 
 

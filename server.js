@@ -46,6 +46,8 @@ app.use(session({
   })
 );
 
+// app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 10000 }}))
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
