@@ -9,22 +9,12 @@
 <ol class="post-list" > 
   {{#each posts as |post|}} 
   <li>
-    TESTHOMEPAGE - {{post.created_at}} - {{created_at}}
-    {{> post-info post }}
+    <!--- uncomment for testing - createdAt returns data here
+    TESTHOMEPAGE - {{format_date createdAt}} 
+    --->
+  <a href="/post/{{post.id}}" class="post-wrapper">
+      {{> post-info post}}
+  </a>
   </li>
   {{/each}}
 </ol>
-
-<!---
-{{#if posts.length}}
-<section>
-  <ol class="post-list">
-    {{#each posts as |post|}}
-    <li> *** TESTING*** x{{post.created_at}}x
-      {{> post-info post}}
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
---->

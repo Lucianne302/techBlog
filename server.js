@@ -34,6 +34,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
 
+app.use(session({
+  secret: 'Super secret secret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {
+    path:'/login',
+    maxAge: 1 * 1 * 2 * 1000,
+    overwrite:false
+    }
+  })
+);
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

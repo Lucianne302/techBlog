@@ -4,12 +4,12 @@ const { Post, User, Comment } = require('../models');
 
 // get all posts for homepage
 router.get('/', (req, res) => {
-  console.log('home-routes');
+  // console.log('home-routes');
   Post.findAll({
     include: [User]
   })
     .then(dbPostData => {
-      console.log(dbPostData);
+      // console.log(dbPostData);
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
       res.render('homepage', {
@@ -74,6 +74,12 @@ router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
+  }
+
+  module.exports.home = (req, res) => {
+    if(!req.session.user){
+      res.render('login');
+    }
   }
 
   res.render('login');
