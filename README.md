@@ -74,8 +74,7 @@ tested applications adding console logs. Used Insomnia to test posts and get env
 GitHub Username: Lucianne302 
 GitHub Profile Link: https://github.com/Lucianne302/techBlog.git
 
-Heroku, https://dry-gorge-61247.herokuapp.com/  
+Heroku, https://thawing-everglades-32011.herokuapp.com/
 
 ## Video
 
-JAWSDB_URL = 'mysql://fzsg1dgtx1ayzyf1:m9ki7blodd2boq02@z37udk8g6jiaqcbx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/bf2ynsokws5o6ti8'
